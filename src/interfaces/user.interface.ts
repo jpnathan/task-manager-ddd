@@ -1,10 +1,9 @@
-import { UID } from 'types-ddd';
+import { UUID } from 'crypto';
 
 export interface User {
-  id: UID,
+  id: UUID,
   email: string,
   password: string,
-  confirmPassword: string
 };
 
 export interface DatabaseUser extends Omit<User, 'confirmPassword'> { }

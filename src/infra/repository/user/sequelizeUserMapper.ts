@@ -1,16 +1,20 @@
-import { UID } from "types-ddd";
-import { User } from '../../../domain/user/user.entity';
+import User from "../../../domain/entity/user";
+import { DatabaseUser } from "../../../interfaces/user.interface";
+import Email from "../../../domain/entity/email";
+import Password from "../../../domain/entity/password";
 
 export class SequelizeUserMapper {
-  public toEntity(dataValues: { id: UID, email: string, password: string } ) {
-    const { id, email, password } = dataValues;
+
+  public async toEntity(dataValues: DatabaseUser ) {
+    const email = new Email(dataValues.email);
+    const password = await Password.create(dataValues.password);
     
-    return new User({ id, email, password });
+    return new User(email, password);
   }
 
-  public toDatabase(survivor: { email: string, password: string }) {
+  public toDatabase(survivor: User) {
     const { email, password } = survivor;
-
+    
     return { email, password };
   }
 };
