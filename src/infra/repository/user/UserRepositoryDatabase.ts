@@ -1,6 +1,6 @@
 import { SequelizeUserMapper } from './sequelizeUserMapper';
-import User from "../../../domain/entity/user";
-import UserRepository from "../../../application/repository/userRepository";
+import User from "../../../domain/entity/user/user";
+import UserRepository from "../../../application/usecase/repository/userRepository";
 
 export default class UserRepositoryDatabase implements UserRepository {
 	private sequelizeUserMapper = new SequelizeUserMapper();

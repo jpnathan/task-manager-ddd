@@ -1,4 +1,4 @@
-import User from "../../domain/entity/user";
+import User from "../../../domain/entity/user/user";
 import UserRepository from "../repository/userRepository";
 
 export default class Signup {

@@ -1,5 +1,5 @@
 // import Login from "../../src/application/usecase/login";
-import Login from "../../src/application/usecase/login";
+import Login from "../../src/application/usecase/user/login";
 import Signup from "../../src/application/usecase/signup";
 import UserRepositoryDatabase from "../../src/infra/repository/user/UserRepositoryDatabase";
 import { SequelizeConnection } from "../../src/infra/sequelize/Connection";

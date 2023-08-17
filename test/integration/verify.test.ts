@@ -1,8 +1,8 @@
-import UserRepository from "../../src/application/repository/userRepository";
-import Login from "../../src/application/usecase/login";
+import UserRepository from "../../src/application/usecase/repository/userRepository";
+import Login from "../../src/application/usecase/user/login";
 import Signup from "../../src/application/usecase/signup";
 import Verify from "../../src/application/usecase/verify";
-import User from "../../src/domain/entity/user";
+import User from "../../src/domain/entity/user/user";
 
 test("Deve verificar um token", async function () {
 	const verify = new Verify();

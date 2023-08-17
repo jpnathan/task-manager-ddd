@@ -1,4 +1,4 @@
-import TokenGenerator from "../../domain/entity/tokenGenerator";
+import TokenGenerator from "../../../domain/entity/auth/tokenGenerator";
 import UserRepository from "../repository/userRepository";
 
 export default class Login {

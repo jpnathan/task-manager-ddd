@@ -1,4 +1,4 @@
-import User from "../../src/domain/entity/user";
+import User from "../../src/domain/entity/user/user";
 
 test("Deve criar um novo usuário", async function () {
 	const user = await User.create("joao@gmail.com", "abc123");

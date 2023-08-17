@@ -4,7 +4,7 @@ import cors from "cors";
 export default class ExpressAdapter {
 	app: any;
 
-	constructor (routes: IRouter) {
+	constructor (routes: IRouter[]) {
 		this.app = express();
 		this.app.use(express.json());
 		this.app.use(cors());

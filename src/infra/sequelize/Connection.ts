@@ -44,9 +44,7 @@ export class SequelizeConnection {
     this.credentials = { username, password, database, host, dialect };
   }
 
-  public init(): Sequelize {
-    console.log('credentials', this.credentials);
-    
+  public init(): Sequelize {    
     return new Sequelize(
       'ada_tech',
       'postgres',

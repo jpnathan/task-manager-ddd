@@ -7,3 +7,12 @@ CREATE TABLE users
     password text,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE tasks
+(
+    id SERIAL not null,
+    title text,
+    content text,
+    list text,
+    PRIMARY KEY (id)
+);

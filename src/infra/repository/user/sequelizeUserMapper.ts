@@ -1,7 +1,7 @@
-import User from "../../../domain/entity/user";
+import Email from "../../../domain/entity/user/email";
+import Password from "../../../domain/entity/user/password";
+import User from "../../../domain/entity/user/user";
 import { DatabaseUser } from "../../../interfaces/user.interface";
-import Email from "../../../domain/entity/email";
-import Password from "../../../domain/entity/password";
 
 export class SequelizeUserMapper {
 

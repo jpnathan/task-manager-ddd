@@ -1,6 +1,6 @@
 import express, { IRouter, Request, Response } from "express";
-import Signup from "../usecase/signup";
-import Login from "../usecase/login";
+import Signup from "../usecase/user/signup";
+import Login from "../usecase/user/login";
 
 export class UserRoutes {
     public router: IRouter = express.Router();
